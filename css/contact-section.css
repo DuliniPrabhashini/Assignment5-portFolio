@@ -1,0 +1,43 @@
+#contact-title{
+    margin: 2rem;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.contact{
+    width: 5rem;
+    height: 5rem;
+    transition: transform 0.5s ease-in-out;
+}
+.contact:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    opacity: 0.5;
+}
+
+.link{
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+.link:hover{
+    opacity: 1;
+}
+
+#phone-icon {
+    font-size: 3rem;
+}
+#email-icon{
+    font-size: 3rem;
+}
+#linkedin-icon{
+    font-size: 3rem;
+}
+#github-icon{
+    font-size: 3rem;
+}

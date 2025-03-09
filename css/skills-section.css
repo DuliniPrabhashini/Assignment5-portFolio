@@ -1,0 +1,43 @@
+#skills{
+    background-color: #ced6e0 !important;
+}
+
+#skills-title{
+    color: #30336b;
+}
+
+.skills-section {
+    padding: 60px 0;
+}
+
+.skills-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.skill-card{
+    width: 15rem;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.skill{
+    font-size: 1.5rem;
+    font-family:  "Bree Serif", serif;
+    color: #30336b;
+}
+
+.progress{
+    margin-top: 1rem;
+}
+
+.percentage{
+    font-weight: 600;
+    color: #57606f;
+    margin-left: 13rem;
+}

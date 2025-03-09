@@ -1,0 +1,43 @@
+#projects{
+    background-color: #bdc3c7 !important;
+}
+
+#project-title{
+    color: #30336b;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.project-card{
+    width: 15rem;
+    height: 16rem;
+    border-radius: 15%;
+    background-color: #899ea5;
+    transition: transform 0.5s ease-in-out;
+    margin: 1.5rem;
+}
+
+.project-card:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    opacity: 0.5;
+}
+
+.project-name{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #30336b;
+    margin-left: 2rem;
+    position: relative;
+    top: 1.5rem; 
+}
+
+.project-img{
+    width: 12rem;
+    height: 8rem;
+    margin-left: 10%;
+    margin-top: 20%;
+}
