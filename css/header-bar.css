@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     height: 5rem;
     position: sticky;
     top: 0;
@@ -18,5 +18,110 @@
    font-family: "Bree Serif", serif;
    font-weight: 800;
    font-size: 1.5rem;
+} */
 
-}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+  }
+
+  h3{
+    font-family: "Bree Serif", serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-links li {
+    margin-right: 16px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  #burger {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .menu-panel {
+    background-color: #e15f41;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+  }
+
+  .menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+  }
+
+  .menu-panel ul li {
+    margin-bottom: 16px;
+  }
+
+  .menu-panel ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    #burger {
+      display: block;
+    }
+    .navigation {
+      display: none;
+    }
+    .logo-container > h3 {
+      display: none;
+    }
+    .menu-panel.active {
+      right: 0;
+    }
+  }

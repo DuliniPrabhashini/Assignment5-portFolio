@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/css/project-section.css">
   <link rel="stylesheet" href="/css/project-section.css">
   <link rel="stylesheet" href="/css/contact-section.css">
+  <link rel="stylesheet" href="/css/responsive.css">
 
   <!-- icons -->
   <link 
@@ -33,8 +34,8 @@
 </head>
 <body>
   
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Header Bar -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <img src="/assests/images/profileImg.jpeg" alt="logo" id="logo">
         <a class="navbar-brand" href="#" id="name">Dulini Prabhashini</a>
@@ -61,7 +62,36 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav> -->
+
+
+<header>
+  <div class="logo-container">
+    <img class="logo" src="/assests/images/profileImg.jpeg" alt="profile" />
+    <h3>Dulini Prabhashini</h3>
+  </div>
+  <nav class="navigation">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+  <nav class="menu-panel" id="menu-panel-id">
+    <button class="close-btn" id="btn-close">&times;</button>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
 <!-- Hero Section -->
 <section class="hero-section bg-primary text-white text-center py-5">
@@ -206,7 +236,7 @@
 
       <div class="contact github">
         <i class="fa-brands fa-square-github"  id="github-icon"></i>
-        <a href="https://www.linkedin.com/in/dulini-prabhashini-421335348/" target="_blank" class="link">github</a>
+        <a href="https://github.com/DuliniPrabhashini" target="_blank" class="link">github</a>
       </div>
 
     </div>
@@ -221,6 +251,22 @@
     </div>
 </footer>
 
+<!-- java script for burger button -->
+  <script>
+    const burger = document.getElementById("burger");
+    const menuPanel = document.getElementById("menu-panel-id");
+    const closeBtn = document.getElementById("btn-close");
+
+    burger.addEventListener("click", () => {
+      menuPanel.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menuPanel.classList.remove("active");
+    });
+  </script>
+
+<!-- java script for bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
